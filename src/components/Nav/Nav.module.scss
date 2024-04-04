@@ -1,0 +1,48 @@
+.container {
+  @apply w-full flex flex-col justify-start items-center border-r;
+  border-color: var(--light-gray);
+}
+
+.header {
+  @apply flex flex-col justify-between items-center py-14;
+
+  p {
+    @apply text-lg text-white tracking-wider;
+  }
+
+  button {
+    @apply w-32 h-7 font-anekTamil text-base mt-10 transition-colors duration-150 ease-in-out;
+    background: rgba(247, 107, 38, 0.16);
+    color: rgba(247, 107, 38, 1);
+
+    &:hover {
+      background: rgba(247, 107, 38, 0.3);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.navItems {
+  @apply py-4;
+
+  a {
+    @apply flex justify-start py-2.5 my-2 transition-colors duration-150 ease-in-out;
+    color: rgba(218, 218, 218, 0.5);
+
+    &:hover {
+      color: rgba(248, 248, 248, 1);
+    }
+
+    &.active {
+      color: rgba(248, 248, 248, 1);
+    }
+
+    p {
+      @apply mx-4 font-anekTamil text-lg leading-6;
+    }
+
+    img {
+      fill: rgba(248, 248, 248, 1);
+    }
+  }
+}

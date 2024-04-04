@@ -1,0 +1,9 @@
+.statItem {
+  @apply text-3xl text-white flex justify-center items-center h-28;
+  background: rgba(24, 24, 24, 1);
+
+  .subStatText {
+    @apply text-xs ml-2;
+    color: rgba(112, 112, 112, 1);
+  }
+}
