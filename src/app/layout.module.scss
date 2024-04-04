@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 5.5fr;
+  max-width: 1500px;
+  @apply mx-auto;
+}
+
+.nav {
+  @apply border-r;
+  border-color: var(--light-gray);
+}
