@@ -7,7 +7,7 @@
   @apply flex flex-col justify-between items-center py-14;
 
   p {
-    @apply text-lg text-white tracking-wider;
+    @apply text-lg text-white tracking-wider font-normal;
   }
 
   button {
@@ -31,10 +31,18 @@
 
     &:hover {
       color: rgba(248, 248, 248, 1);
+
+      img {
+        filter: brightness(100);
+      }
     }
 
     &.active {
       color: rgba(248, 248, 248, 1);
+
+      img {
+        filter: brightness(100);
+      }
     }
 
     p {

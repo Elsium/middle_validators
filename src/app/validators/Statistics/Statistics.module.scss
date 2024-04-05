@@ -1,7 +1,7 @@
-.container {
-  @apply px-8 py-16 w-full flex flex-col;
-}
-
 .title {
   @apply text-white leading-8 text-xl tracking-wider;
+}
+
+.stat {
+  @apply w-full grid grid-cols-3 gap-x-8 mt-8;
 }

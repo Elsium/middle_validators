@@ -1,6 +1,5 @@
 .main {
-  display: grid;
+  @apply mx-auto grid;
   grid-template-columns: 1fr 5.5fr;
   max-width: 1500px;
-  @apply mx-auto;
 }

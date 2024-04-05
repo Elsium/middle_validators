@@ -2,7 +2,7 @@ import { Anek_Tamil, Poppins, Roboto } from 'next/font/google'
 
 export const anekTamil = Anek_Tamil({
     subsets: ['latin'],
-    weight: '500',
+    weight: ['500', '400'],
     variable: '--font-anek_tamil'
 })
 

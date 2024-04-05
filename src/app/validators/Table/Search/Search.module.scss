@@ -1,0 +1,23 @@
+.title {
+  @apply text-white leading-8 text-xl tracking-wider;
+}
+
+.valid {
+  @apply flex justify-between w-full mt-8;
+
+  .search {
+    @apply flex justify-center items-center;
+    background: rgba(24, 24, 24, 1);
+    width: 520px;
+
+    input {
+      @apply text-center bg-inherit text-white outline-none;
+      width: 480px;
+
+      &::placeholder {
+        @apply text-xs;
+        color: rgba(218, 218, 218, 0.2);
+      }
+    }
+  }
+}

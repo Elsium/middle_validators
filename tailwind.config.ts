@@ -13,7 +13,7 @@ const config: Config = {
         roboto: ['var(--font-roboto)'],
         poppins: ['var(--font-poppins)']
       }
-    },
+    }
   },
   plugins: [],
 };

@@ -1,27 +1,27 @@
 import type {Metadata} from "next";
-import  './globals.scss';
-import s from './layout.module.scss';
-import {anekTamil, poppins, roboto} from "@/util/font";
-import Nav from "@/components/Nav/Nav";
+import '@/app/globals.scss';
+import s from '@/app/layout.module.scss';
+import {anekTamil, poppins, roboto} from "@/app/util/font";
+import Nav from "@/app/components/Nav/Nav";
 
 export const metadata: Metadata = {
-  title: "Validators",
-  description: "Case for STAKEME",
+    title: "STAKEME",
+    description: "Case for STAKEME",
 };
 
 export default function RootLayout({
-                                     children,
+                                       children,
                                    }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-      <html lang="en">
-      <body className={`${anekTamil.variable} ${roboto.variable} ${poppins.variable}`}>
-      <section className={s.main}>
-        <Nav/>
-        {children}
-      </section>
-      </body>
-      </html>
-  );
+    return (
+        <html lang="en">
+        <body className={`${anekTamil.variable} ${roboto.variable} ${poppins.variable}`}>
+        <section className={s.main}>
+            <Nav/>
+            {children}
+        </section>
+        </body>
+        </html>
+    );
 }

@@ -1,0 +1,19 @@
+.listType {
+  @apply flex w-full justify-center border-b mt-8;
+  border-color: var(--light-gray);
+
+  .listTypeBtn {
+    @apply px-12 py-3;
+    color: rgba(112, 112, 112, 1);
+
+    &.active {
+      @apply border-b;
+      color: rgba(78, 149, 255, 1);
+      border-color: rgba(78, 149, 255, 1);
+    }
+  }
+}
+
+.list {
+  @apply mt-8;
+}

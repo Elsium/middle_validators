@@ -4,14 +4,14 @@ import s from './Nav.module.scss'
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import blocks from '@/../public/nav/blocks.svg';
-import dashboard from '@/../public/nav/dashboard.svg';
-import network from '@/../public/nav/network.svg';
-import proposals from '@/../public/nav/proposals.svg';
-import transactions from '@/../public/nav/transactions.svg';
-import utilities from '@/../public/nav/utilities.svg';
-import validators from '@/../public/nav/validators.svg';
-import arrow from '@/../public/arrow.svg';
+import blocks from '@/app/components/Nav/img/blocks.svg';
+import dashboard from '@/app/components/Nav/img/dashboard.svg';
+import network from '@/app/components/Nav/img/network.svg';
+import proposals from '@/app/components/Nav/img/proposals.svg';
+import transactions from '@/app/components/Nav/img/transactions.svg';
+import utilities from '@/app/components/Nav/img/utilities.svg';
+import validators from '@/app/components/Nav/img/validators.svg';
+import arrow from './img/arrow.svg';
 
 
 export default function Nav() {
