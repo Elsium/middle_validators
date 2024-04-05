@@ -1,5 +1,10 @@
 .main {
-  @apply mx-auto grid;
-  grid-template-columns: 1fr 5.5fr;
+  @apply w-full mx-auto grid sm:grid-cols-1;
   max-width: 1500px;
+}
+
+@media (min-width: 1500px) {
+  .main {
+    grid-template-columns: 1fr 5.5fr;
+  }
 }

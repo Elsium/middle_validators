@@ -28,6 +28,7 @@ export default function ListItem({rank, show, moniker, tokens, votingPowerPercen
                     alt=""/>
                 <p className={s.name}>{moniker}</p>
             </div>
+            <p className={s.additional}>Voting Power</p>
             <div className={s.status}>
                 <Image src={status} alt={`P`}/>
                 <p className={s.text}>{tokens}</p>
@@ -37,8 +38,11 @@ export default function ListItem({rank, show, moniker, tokens, votingPowerPercen
                 <div className={s.line}><div style={{width: `${cumulativeShare}%`}} /></div>
                 <p className={s.textGray}>{cumulativeShare}%</p>
             </div>
-            <p>{rate}%</p>
-            <p>{uptime}</p>
+            <p className={s.additional}>Comm.</p>
+            <p className={s.text}>{rate}%</p>
+            <p className={s.additional}>Uptime</p>
+            <p className={uptime == 'In Jailed' ? `${s.jailed} ${s.text}` : uptime == 'Tombstoned' ? `${s.tombstoned} ${s.text}` : s.text}>{uptime}</p>
+            <p className={s.additional}>Participation</p>
             <p className={participationVoted ? s.text : `${s.text} ${s.inactive}`}>{participationRate}% <span className={s.textGray}>{participationVoted}/{participationTotal}</span></p>
             <div className={s.arrow}>→</div>
         </Link>

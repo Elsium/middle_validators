@@ -6,12 +6,11 @@
   @apply flex justify-between w-full mt-8;
 
   .search {
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center sm:w-12 md:w-520;
     background: rgba(24, 24, 24, 1);
-    width: 520px;
 
     input {
-      @apply text-center bg-inherit text-white outline-none;
+      @apply text-center bg-inherit text-white outline-none sm:hidden md:block;
       width: 480px;
 
       &::placeholder {

@@ -1,6 +1,7 @@
 .statItem {
-  @apply text-3xl text-white flex justify-center items-center h-28;
+  @apply text-3xl text-white flex justify-center items-center h-28 sm:border lg:border-none;
   background: rgba(24, 24, 24, 1);
+  border-color: rgba(34, 34, 34, 1);
 
   .subStatText {
     @apply text-xs ml-2;

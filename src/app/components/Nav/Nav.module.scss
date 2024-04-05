@@ -1,5 +1,5 @@
 .container {
-  @apply w-full flex flex-col justify-start items-center border-r;
+  @apply w-full flex flex-col justify-start items-center border-r sm:absolute sm:right-full lg:relative lg:right-0;
   border-color: var(--light-gray);
 }
 

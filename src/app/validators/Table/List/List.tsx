@@ -27,7 +27,7 @@ export default function List({active, search, onActive, onInactive}: Callback) {
                                           cumulativeShare={(i.cumulativeShare*100).toFixed(2)}
                                           rate={i.commission.commissionRates.rate/10_000_000_000_000_000}
                                           uptime={ i.jailed
-                                              ? i.tombstoned ? 'Tombstoned' : 'Jailed'
+                                              ? i.tombstoned ? 'Tombstoned' : 'In Jailed'
                                               : (i.uptime.windowUptime.uptime*100).toFixed(2) + '%'}
                                           participationRate={(i.participation.rate*100).toFixed(2)}
                                           participationVoted={i.participation.voted}

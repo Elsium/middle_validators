@@ -1,37 +1,41 @@
 .item {
-  @apply w-full flex justify-between items-center border h-20 px-4 text-base my-2;
+  @apply w-full sm:grid sm:grid-rows-5 sm:grid-cols-2 sm:h-40 sm:py-3 lg:flex lg:h-20 lg:justify-between lg:items-center lg:py-0 px-4 border text-base my-2;
   background: rgba(24, 24, 24, 1);
   border-color: rgba(34, 34, 34, 1);
   color: rgba(218, 218, 218, 1);
 
   .nameBox {
-    @apply flex w-72;
+    @apply flex w-72 sm:order-first lg:order-none;
+
+    .id {
+      @apply sm:hidden lg:block;
+    }
 
     img {
-      @apply h-6 w-6 ml-8;
+      @apply h-6 w-6 lg:ml-8;
     }
 
     .name {
-      @apply ml-2;
+      @apply ml-2 sm:text-sm lg:text-lg;
       color: rgba(104, 192, 255, 1);
     }
   }
 
   .status {
-    @apply flex items-center;
+    @apply flex items-center sm:text-sm lg:text-lg;
 
     .text, .textGray {
       @apply ml-2;
     }
 
     .textGray {
-      @apply text-sm;
+      @apply sm:text-xs lg:text-sm;
       color: rgba(112, 112, 112, 1);
     }
   }
 
   .progress {
-    @apply flex items-center;
+    @apply flex items-center sm:order-first lg:order-none;
 
     .line {
       @apply w-40 h-1 relative;
@@ -44,15 +48,17 @@
     }
 
     .textGray {
-      @apply ml-2 text-sm;
+      @apply ml-2 sm:text-xs lg:text-sm;
       color: rgba(112, 112, 112, 1);
     }
   }
 }
 
 .text {
+  @apply sm:text-sm lg:text-lg sm:text-right lg:text-center;
+
   .textGray {
-    @apply ml-2 text-sm;
+    @apply ml-2 sm:text-xs lg:text-sm;
     color: rgba(112, 112, 112, 1);
   }
 
@@ -62,4 +68,25 @@
       color: rgba(255, 118, 118, 0.8);
     }
   }
+}
+
+.jailed {
+  @apply w-20 h-6 text-center rounded-sm font-anekTamil text-lg sm:justify-self-end lg:justify-self-auto;
+  background: rgba(255, 118, 118, 0.16);
+  color: rgba(178, 48, 48, 1);
+}
+
+.tombstoned {
+  @apply w-20 h-6 text-center rounded-sm font-anekTamil text-lg sm:justify-self-end lg:justify-self-auto;
+  background: rgba(112, 112, 112, 0.3);
+  color: rgba(112, 112, 112, 1);
+}
+
+.additional {
+  @apply text-sm sm:block lg:hidden;
+  color: rgba(112, 112, 112, 0.8);
+}
+
+.arrow {
+  @apply sm:hidden lg:block;
 }

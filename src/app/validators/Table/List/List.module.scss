@@ -1,14 +1,13 @@
 .listType {
-  @apply flex w-full justify-center border-b mt-8;
+  @apply flex w-full justify-center lg:border-b mt-8;
   border-color: var(--light-gray);
 
   .listTypeBtn {
-    @apply px-12 py-3;
+    @apply sm:py-2 sm:text-center sm:w-1/2 lg:w-auto lg:px-12 lg:py-3;
     color: rgba(112, 112, 112, 1);
 
     &.active {
-      @apply border-b;
-      color: rgba(78, 149, 255, 1);
+      @apply lg:border-b;
       border-color: rgba(78, 149, 255, 1);
     }
   }
@@ -16,4 +15,18 @@
 
 .list {
   @apply mt-8;
+}
+
+@media(min-width: 360px) {
+  .listTypeBtn.active {
+    background-color: rgba(42, 100, 188, 1);
+    color: white;
+  }
+
+}
+@media(min-width: 1500px) {
+  .listTypeBtn.active {
+    background-color: inherit;
+    color: rgba(78, 149, 255, 1);
+  }
 }

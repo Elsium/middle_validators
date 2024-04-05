@@ -12,7 +12,21 @@ const config: Config = {
         anekTamil: ['var(--font-anek_tamil)'],
         roboto: ['var(--font-roboto)'],
         poppins: ['var(--font-poppins)']
+      },
+      width: {
+        '520': '520px',
+
       }
+    },
+    screens: {
+      'sm': '360px',
+      // => @media (min-width: 360px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1500px',
+      // => @media (min-width: 1500px) { ... }
     }
   },
   plugins: [],
